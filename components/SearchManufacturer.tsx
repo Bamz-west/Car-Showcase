@@ -44,7 +44,7 @@ const SearchManufacturer = ({ selected, setSelected }: SearchManufacturerProps) 
                         leaveTo='opacity-0'
                         afterLeave={() => setQuery("")}
                     >
-                        <Combobox.Options className="absolute top-10 w-full bg-white">
+                        <Combobox.Options className="">
                             {filteredManufacturers.length === 0 && query !== "" ? (
                                 <div className="relative cursor-default select-none px-5 py-2 text-gray-500">
                                     Nothing found.
